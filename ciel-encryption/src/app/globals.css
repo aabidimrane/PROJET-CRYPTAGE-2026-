@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Grid Pattern Background */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(51, 65, 85, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(51, 65, 85, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(51, 65, 85, 0.8);
+}
+
+/* Code Block Styling */
+pre,
+code {
+  font-family: 'Courier New', monospace;
+}
+
+/* Focus Styles */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgba(14, 165, 233, 0.5);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+}
