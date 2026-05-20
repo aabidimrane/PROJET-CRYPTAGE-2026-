@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "rm -rf ../docs && cp -r out ../docs && touch ../docs/.nojekyll",
+    "deploy": "npm run build && npm run export",
     "start": "next start",
     "lint": "eslint"
   },

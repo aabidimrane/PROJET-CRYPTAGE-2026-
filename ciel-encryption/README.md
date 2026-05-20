@@ -25,6 +25,15 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000)
 
+## Deployment
+
+For GitHub Pages, build and export the static site into the repository root `docs/` folder:
+```bash
+npm run deploy
+```
+
+Then configure GitHub Pages source to `main` branch and `/docs` folder.
+
 ## Usage
 
 - **Login**: Use `admin/admin` for admin access or `user/user` for regular user access
