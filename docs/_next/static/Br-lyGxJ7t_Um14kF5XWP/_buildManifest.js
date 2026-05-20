@@ -1,7 +1,12 @@
 self.__BUILD_MANIFEST = {
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/PROJET-CRYPTAGE-2026-//_next/:path+",
+        "destination": "/PROJET-CRYPTAGE-2026-/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
